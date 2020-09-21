@@ -42,10 +42,10 @@ yarn-debug.log*
 
 .env
 
-/helpers/*
+/app/helpers/*
 !/application_helper.rb
 
-/app/assets/stylesheets/likes.scss
+/app/assets/stylesheets/*
 likes.scss
 pages.scss
 posts.scss
