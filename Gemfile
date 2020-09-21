@@ -1,17 +1,37 @@
 source 'https://rubygems.org'
+ruby "2.7.0"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails',      '6.0.3'
+gem 'rails', '6.0.3'
+gem 'pry-rails'
+gem 'rmagick'
+gem 'carrierwave'
+gem 'fog-aws'
+gem 'faker'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+gem 'dotenv-rails'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'devise'
+gem 'bootstrap-sass', '3.4.1'
+gem 'rake', '13.0.1'
 gem 'puma',       '4.3.4'
 gem 'sass-rails', '5.1.0'
 gem 'webpacker',  '4.0.7'
 gem 'turbolinks', '5.2.0'
 gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '1.4.5', require: false
+gem 'jquery-rails'
+gem 'ransack'
 
 group :development, :test do
   gem 'sqlite3', '1.4.1'
+  gem 'factory_bot_rails'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rubocop-airbnb'
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'spring-commands-rspec'
 end
 
 group :development do
